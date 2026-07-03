@@ -2,6 +2,7 @@ import Inicio from "./../views/Inicio.vue"
 import Producto from "./../views/Producto.vue"
 import Login from "./../views/Login.vue"
 import { createRouter, createWebHistory } from "vue-router";
+import Blog from "../views/blog.vue";
 
 const mis_rutas = [
     {
@@ -15,6 +16,10 @@ const mis_rutas = [
     {
         path: '/login',
         component: Login
+    },
+    {
+        path: '/blog',
+        component: Blog
     }
 
 ];
