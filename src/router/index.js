@@ -1,7 +1,7 @@
 import Inicio from "./../views/Inicio.vue"
 import Producto from "./../views/Producto.vue"
 import Login from "./../views/Login.vue"
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 import Blog from "../views/blog.vue";
 
 const mis_rutas = [
@@ -25,6 +25,6 @@ const mis_rutas = [
 ];
 
 export const router = createRouter({
-    history: createWebHistory('/app-vue-proyecto1/'),
+    history: createWebHashHistory('/app-vue-proyecto1/'),
     routes: mis_rutas
 })
