@@ -3,6 +3,7 @@ import Producto from "./../views/Producto.vue"
 import Login from "./../views/Login.vue"
 import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 import Blog from "../views/blog.vue";
+import NotFoundComponent from "../views/errors/NotFoundComponent.vue";
 
 const mis_rutas = [
     {
@@ -20,11 +21,16 @@ const mis_rutas = [
     {
         path: '/blog',
         component: Blog
-    }
+    },
+    {
+        path: '/:pathMatch(.*)',
+        component: NotFoundComponent
+    },
+    
 
 ];
 
 export const router = createRouter({
-    history: createWebHashHistory('/app-vue-proyecto1/'),
+    history: createWebHistory('/app-vue-proyecto1/'),
     routes: mis_rutas
 })
