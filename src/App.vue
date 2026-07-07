@@ -35,6 +35,14 @@
           </RouterLink>
 
           <RouterLink 
+            to="/productos-venta" 
+            class="px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50 transition-all duration-200"
+            active-class="text-indigo-600 bg-indigo-50/70 font-semibold"
+          >
+            PRODUCTOS (VENTA)
+          </RouterLink>
+
+          <RouterLink 
             to="/login" 
             class="ml-2 px-4 py-2 rounded-xl text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm hover:shadow transition-all duration-200"
             active-class="bg-indigo-800 ring-2 ring-indigo-300"
