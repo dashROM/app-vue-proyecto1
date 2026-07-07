@@ -28,7 +28,7 @@ const mis_rutas = [
         component: ProductosVenta
     },
     {
-        path: '/:pathMatch(.*)*',
+        path: '/:pathMatch(.*)',
         component: NotFoundComponent
     }
 ];
